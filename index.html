@@ -9,6 +9,7 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <nav id="nav">
@@ -54,7 +55,7 @@
       <h1 class="title">Why Choose Us ?</h1>
       <hr />
       <div class="card__container">
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="100">
           <span>
             <i class="ri-chat-smile-ai-3-fill"></i>
           </span>
@@ -66,7 +67,7 @@
           <div class="number">1</div>
         </div>
 
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="300">
           <span>
             <i class="ri-space-ship-2-fill"></i>
           </span>
@@ -78,7 +79,7 @@
           <div class="number">2</div>
         </div>
 
-        <div class="card">
+        <div class="card" data-aos="fade-up" data-aos-delay="500">
           <span>
             <i class="ri-edit-box-line"></i>
           </span>
@@ -107,7 +108,7 @@
     </section>
 
     <section class="third__section">
-      <div class="left__content">
+      <div class="left__content" data-aos="fade-right" data-aos-delay="100">
         <h1>Lorem ipsum dolor sit</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -117,7 +118,7 @@
         </p>
         <button class="Discover__btn">Button</button>
       </div>
-      <div class="right__content">
+      <div class="right__content" data-aos="fade-left" data-aos-delay="400">
         <div>
           <img src="./images/pexels-jonathanborba-17771078.jpg" alt="devlopement" loading="lazy">
         </div>
@@ -141,7 +142,7 @@
       <h1 class="title">Lorem ipsum dolor</h1><hr>
 
       <div class="card__container">
-        <div class="card_2">
+        <div class="card_2" data-aos="fade-up" data-aos-delay="100">
           <span>
             <i class="ri-space-ship-2-fill"></i>
           </span>
@@ -150,7 +151,7 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis iste libero distinctio similique adipisci fugiat accusamus impedit odio voluptas et aliquid pariatur at eligendi aperiam nulla animi, eius itaque amet!15
           </p>
         </div>
-        <div class="card_2">
+        <div class="card_2" data-aos="fade-down" data-aos-delay="300">
           <span>
             <i class="ri-remix-fill"></i>
           </span>
@@ -159,7 +160,7 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis iste libero distinctio similique adipisci fugiat accusamus impedit odio voluptas et aliquid pariatur at eligendi aperiam nulla animi, eius itaque amet!15
           </p>
         </div>
-        <div class="card_2">
+        <div class="card_2" data-aos="fade-up" data-aos-delay="500">
           <span>
             <i class="ri-ink-bottle-fill"></i>
           </span>
@@ -168,7 +169,7 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis iste libero distinctio similique adipisci fugiat accusamus impedit odio voluptas et aliquid pariatur at eligendi aperiam nulla animi, eius itaque amet!15
           </p>
         </div>
-        <div class="card_2">
+        <div class="card_2" data-aos="fade-down" data-aos-delay="700">
           <span>
             <i class="ri-artboard-2-fill"></i>
           </span>
@@ -177,7 +178,7 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis iste libero distinctio similique adipisci fugiat accusamus impedit odio voluptas et aliquid pariatur at eligendi aperiam nulla animi, eius itaque amet!15
           </p>
         </div>
-        <div class="card_2">
+        <div class="card_2" data-aos="fade-up" data-aos-delay="900">
           <span>
            <i class="ri-magic-fill"></i>
           </span>
@@ -186,7 +187,7 @@
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis iste libero distinctio similique adipisci fugiat accusamus impedit odio voluptas et aliquid pariatur at eligendi aperiam nulla animi, eius itaque amet!15
           </p>
         </div>
-        <div class="card_2">
+        <div class="card_2" data-aos="fade-down" data-aos-delay="1100">
           <span>
             <i class="ri-painting-line"></i>
           </span>
@@ -198,5 +199,13 @@
       </div>
     </section>
     <script defer src="script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 120, // المسافة بالبكسل لبدء الحركة عند التمرير
+        duration: 800, // مدة الحركة بالملي ثانية
+        once: true, // اجعل الحركة تحدث مرة واحدة فقط أثناء النزول ولا تتكرر عند الصعود
+      });
+    </script>
   </body>
 </html>
